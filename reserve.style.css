@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: 0;
+}
+
+:root {
+    --g: #1A4D2E;
+    --gg: #4F6F52;
+    --w: #E8DFCA;
+    --ww: #F5EFE6;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(to right, var(--g) 20%, var(--gg));
+    display: grid;
+    grid-template-columns: 10.2% 40% 50%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    font-weight: 4rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 2px solid rgba(1, 1, 1, 0);
+    transition: 0.4s ease;
+}
+
+a:hover {
+    color: var(--w);
+}
+
+.logout {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-logout {
+    padding: 1vh 3vw;
+    margin-right: 4vw;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}   
+
+.button-logout:hover {
+    background-color: var(--g);
+    font-weight: 40vw;
+    cursor: pointer;
+}
+  /* table show data  */
+ 
+  table {
+    width: 100%;
+    margin-top:20vh;
+    border-collapse: collapse;
+    border: 1px solid #352d2d;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--gg);
+    
+}
+tr {
+    background-color:var(--w);
+}
+tr:hover {
+    background-color:var(--ww);
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.deletebutton, .updatebutton {
+    background-color:var(--gg);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+.deletebutton a, .updatebutton a {
+    text-decoration:none;
+    color:black;
+
+}
+.deletebutton:hover  {
+    background-color:var(--g);
+}
+.updatebutton a:hover, 
+.deletebutton a:hover   {
+    color:white;
+}
+.updatebutton:hover  {
+    background-color:var(--gg);
+}
+
+/* update form page */
+.container {
+    background-color: var(--g);
+    width: 40vw;
+    height: 70vh;
+    padding: 2vh 2vh;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 6vh;
+    box-shadow: 0 0 10px var(--gg);
+}
+
+.contInfor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.updateLabel {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.form-group label {
+    width: 10vw;
+    text-align: left;
+    margin-right: 1vw;
+}
+
+.form-group input[type="text"],
+.form-group input[type="time"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 20vw;
+    height: 4vh;
+    padding: 0.5vh 1vh;
+    margin-left: 1vw;
+}
+.submitbutton {    
+    background-color: var(--w);
+    border: none;
+    font-size: 2vh;
+    margin-top: -1vh;
+    font-weight: bold;
+    padding: 1.5vh 1.5vh;
+    text-align: center;
+    width: 30vw;
+    border-radius: 10vh;
+    margin-left:5vh;
+}
+
+.submitbutton:hover {
+    background-color: var(--ww);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MOTEL RESERVATION SYSTEM</title>
+    <style>
+        .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    margin-top:40vh;
+    margin-left:10vw;
+}
+
+.side p, #p {
+    font-size:2.5rem;
+    color:var(--g);
+    font-weight:bold;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left:-6vw;    
+}
+
+.personImg {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px; 
+}
+
+.personImg img {
+    width: 8vw;
+    height: 4vh;
+}
+
+.side .person {
+    flex-direction: row; 
+}
+#margin {
+    margin-left:10vw;
+}
+#marginn {
+    margin-left:1vw;
+}
+    </style>
+</head>
+<body style="background-image:url('media/motel.png');"> 
+    <nav>
+        <p style="margin-left:3vw; color:white;"> MOTEL RESERVATION SYSTEM</p>
+        <div class="nav-links">
+            <a href="reserve.html">RESERVE</a>
+            <a href="data.php">DATA</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+        <div class="logout">
+            <a href="login.html"> <button class="button-logout">LOGOUT</button></a> 
+        </div>
+    </nav>
+    <div class="side">
+        <p id="p">"Unlock comfort, one reservation at a time."</p>
+        <div class="person">
+            <img class="personImg" src="media/person.png">
+            <p id="marginn">NAME  </p>
+            <img class="personImg" src="media/person.png" style="margin-left:10vw;">
+            <p id="marginn"> NAME </p>
+        </div>
+    </div>
+    
+    </body>
+    </html> 

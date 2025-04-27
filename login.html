@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Page</title>
+  <style>
+    :root {
+      --g: #1A4D2E;
+      --gg: #4F6F52;
+      --w: #E8DFCA;
+      --ww: #F5EFE6;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: var(--ww);
+    }
+
+    .login-container {
+      background-color: var(--w);
+      padding: 5vw;
+      border-radius: 3vw;
+      box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+      max-width: 40vw;
+      width: 80vw;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 4vh;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 2vh;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 2vh;
+      border: 0.5vw solid var(--gg);
+      border-radius: 3vw;
+    }
+
+    button {
+      width: 100%;
+      padding: 2vh;
+      border: none;
+      border-radius: 3vw;
+      background-color: var(--g);
+      color: var(--w);
+      cursor: pointer;
+      margin-left:1vw;
+    }
+
+    button:hover {
+      background-color: var(--gg);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Admin Login Page</h2>
+    <form action="loginDatabase.php" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" name="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
