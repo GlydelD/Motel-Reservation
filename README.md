@@ -2,10 +2,19 @@
 
 A simple **Motel Reservation System** built with HTML, CSS, and PHP, designed for managing room reservations. This web application allows users to make, view, update, and delete reservations. The system provides a simple interface for submitting personal details, room preferences, and stay dates.
 
-## Installation
+## Screenshots
 
-### Prerequisites:
-- Install **XAMPP**, **WAMP**, or **MAMP** to run PHP and MySQL locally.
+![Screenshot 1](user_interface/loginpage.png)
+*Login Page*
+
+![Screenshot 2](user_interface/datapage.png)
+*Data Page*
+
+![Screenshot 3](user_interface/reservepage.png)
+*Reserve Page*
+
+![Screenshot 4](user_interface/aboutpage.png)
+*About Page*
 
 ### Steps to run locally:
 
